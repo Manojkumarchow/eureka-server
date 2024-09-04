@@ -5,3 +5,4 @@
  - User-service is a demo service which acts as a client that registers itself while starting up.
  - Start both the applications in your local machine.
  - You can view the list of services in the eureka-proxy using http://localhost:9099
+ - You Should have kafka running on your machine, if not please disable the kafka related dependencies
