@@ -11,7 +11,7 @@ public class Receiver {
     private KafkaConfig kafkaConfig;
 
     @KafkaListener(topics = "my_topic", groupId = "group_id")
-    public void receiveMessage(String message) {
+    public void receiveMessage(Object message) {
         System.out.println("MY DEFAULT KAFKA TOPIC NAME: " + kafkaConfig.getDefaultTopicName());
         System.out.println("Received message: " + message + " from : " + kafkaConfig.getDefaultTopicName());
     }
